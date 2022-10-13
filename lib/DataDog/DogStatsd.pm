@@ -261,7 +261,7 @@ Sends an arbitrary count for the given stat to the statsd server.
 	$statsd->gauge('users.online', 100);
 	$statsd->gauge('users.online', 100, { tags => ['tag1', 'tag2'] });
 
-Sends an arbitary gauge value for the given stat to the statsd server.
+Sends an arbitrary gauge value for the given stat to the statsd server.
 
 This is useful for recording things like available disk space, memory usage, and the like, which have different semantics than counters.
 
