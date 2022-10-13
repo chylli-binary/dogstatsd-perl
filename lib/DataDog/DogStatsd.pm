@@ -289,7 +289,7 @@ Sends a value to be tracked as a set to the statsd server.
 	$statsd->event('event title', 'event text', { tags => ['tag1, 'tag2'] });
 	$statsd->event('event title', 'event text', { tags => ['tag1', 'tag2'], alert_type => 'error'});
 
-Sends an event indicating a specific incident occurring. 
+Sends an event indicating a specific incident occurring.
 
 Use alert_type option to specify the kind of event, available options are error, warning, info, and success.
 
