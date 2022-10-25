@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/binary-com/dogstatsd-perl.svg?branch=master)](https://travis-ci.org/binary-com/dogstatsd-perl)
-[![Coverage Status](https://coveralls.io/repos/binary-com/dogstatsd-perl/badge.svg?branch=master)](https://coveralls.io/r/binary-com/dogstatsd-perl?branch=master)
-
 # NAME
 
 DataDog::DogStatsd - A Perl client for DogStatsd
@@ -65,7 +62,7 @@ Sends an arbitrary count for the given stat to the statsd server.
         $statsd->gauge('users.online', 100);
         $statsd->gauge('users.online', 100, { tags => ['tag1', 'tag2'] });
 
-Sends an arbitary gauge value for the given stat to the statsd server.
+Sends an arbitrary gauge value for the given stat to the statsd server.
 
 This is useful for recording things like available disk space, memory usage, and the like, which have different semantics than counters.
 
@@ -93,7 +90,7 @@ Sends a value to be tracked as a set to the statsd server.
         $statsd->event('event title', 'event text', { tags => ['tag1, 'tag2'] });
         $statsd->event('event title', 'event text', { tags => ['tag1', 'tag2'], alert_type => 'error'});
 
-Sends an event indicating a specific incident occurring. 
+Sends an event indicating a specific incident occurring.
 
 Use alert\_type option to specify the kind of event, available options are error, warning, info, and success.
 
